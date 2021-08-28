@@ -34,7 +34,7 @@ const Layout = ({
 
       <Main>{children}</Main>
 
-      {isHeaderShown && <Footer />}
+      {isFooterShown && <Footer />}
     </StyledLayout>
   )
 }

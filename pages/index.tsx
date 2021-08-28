@@ -1,14 +1,12 @@
 import type { NextPage } from 'next'
 
-import { DannyLogo } from '../components/atoms/danny'
 import { Layout } from 'components/templates/layout'
-import { Container } from 'components/atoms/container'
-import { DashBoard } from 'components/pages/dashboard'
+import { Hello } from 'pageComponents/Home'
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <DashBoard />
+      <Hello />
     </Layout>
   )
 }
