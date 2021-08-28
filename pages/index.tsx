@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 
 import { Layout } from 'components/templates/layout'
-import { Hello } from 'pageComponents/Home'
+import HomePage from 'pageComponents/Home'
 
 const Home: NextPage = () => {
   return (
-    <Layout>
-      <Hello />
+    <Layout isHeaderShown={false} isFooterShown={true}>
+      <HomePage />
     </Layout>
   )
 }

@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@/public/*": ["public/*"]
-    }
+    },
+    "typeRoots": ["node_modules/@types", "@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "data"],
   "exclude": ["node_modules"]
