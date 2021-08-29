@@ -9,25 +9,53 @@ import 'react-vertical-timeline-component/style.min.css'
 
 import { experience } from 'data/experience'
 import { Container } from 'components/atoms/container'
+import { Heading, Text } from 'components/atoms/text'
+
+import { useScreenSize } from 'src/utils/useScreenSize'
+
+import Zoom from 'react-reveal/Zoom'
 
 const Experience = () => {
+  const { width } = useScreenSize()
+  const imgSize = width < 1170 ? '40px' : '60px'
+
   return (
     <StyledExperienceContainer>
       <Container>
+        <Zoom top>
+          <Heading type="h1" className="heading">
+            Experience
+          </Heading>
+        </Zoom>
         <VerticalTimeline>
           {experience.map((e, i) => (
             <VerticalTimelineElement
               key={i}
-              icon={<Image src={e.icon} width="100px" height="100px" alt="" />}
+              icon={
+                <div className="company-icon">
+                  <Image src={e.icon} width={imgSize} height={imgSize} alt="" />
+                </div>
+              }
               date={e.date}
             >
-              <div>{e.company}</div>
-              <div>{e.role}</div>
-              <div>
+              <Text type="subtitle-1">{e.company}</Text>
+              <Text type="bodytext-2" className="role">
+                {e.role}
+              </Text>
+              <Text type="bodytext-2">
                 {e.tech.map((t, techIndex) => (
-                  <div key={techIndex}>{t}</div>
+                  <span className="tech-tag" key={techIndex}>
+                    {t}
+                  </span>
                 ))}
-              </div>
+              </Text>
+              <Text type="bodytext-2">
+                {e.languages.map((l, i) => (
+                  <span className="tech-tag" key={i}>
+                    {l}
+                  </span>
+                ))}
+              </Text>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

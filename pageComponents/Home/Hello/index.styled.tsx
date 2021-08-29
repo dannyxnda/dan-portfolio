@@ -3,7 +3,7 @@ import { ThemeProps } from 'styles/theme'
 
 export const StyledHelloContainer = styled.section`
   height: max(100vh, 500px);
-  /* background-image: url('/images/hellobg.png'); */
+  background-image: url('/images/hellobg.jpeg');
   background-size: cover;
   background-color: ${(props: ThemeProps) =>
     props.theme.colors.helloBackground};

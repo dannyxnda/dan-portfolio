@@ -4,7 +4,6 @@ import { Container } from 'components/atoms/container'
 import { StyledHelloContainer } from './index.styled'
 import { hello } from 'data/hello'
 import Typical from 'react-typical'
-import { Heading, Text } from 'components/atoms/text'
 import { DannyLogo } from 'components/atoms/danny'
 import Fade from 'react-reveal/Fade'
 import clsx from 'clsx'
@@ -15,7 +14,7 @@ const Hello = () => {
   React.useEffect(() => {
     const timeout = setTimeout(() => {
       setIsNameStop(true)
-    }, 2000)
+    }, 1200)
 
     return () => clearTimeout(timeout)
   }, [])

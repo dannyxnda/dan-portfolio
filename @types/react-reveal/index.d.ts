@@ -6,6 +6,7 @@ declare module 'react-reveal/Fade' {
     bottom?: boolean
     left?: boolean
     clear?: boolean
+    cascade?: boolean
   }
 
   const Component: FunctionComponent<Props>

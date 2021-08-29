@@ -4,8 +4,10 @@ export const theme = {
     helloBackground: '#7fa9dd',
     helloText: '',
     white: '#FFF',
-    experienceBackground: '#cf9393',
-    contactBackground: '#57bb30d5',
+    experienceBackground: '#a2a4dc',
+    contactBackground: '#e8ff6bd5',
+    aboutBackground: '#d4abab',
+    techBackground: '#d4abab',
   },
 }
 

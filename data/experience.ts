@@ -9,7 +9,7 @@ type Experience = {
 
 export const experience: Experience = [
   {
-    icon: '/images/company/hhg.jpeg',
+    icon: '/images/company/hhg.png',
     date: 'Jul 2020 - Present',
     company: 'Hello Health Group',
     role: 'Front-end Developer',
@@ -29,7 +29,7 @@ export const experience: Experience = [
     date: 'Aug 2019 - Jul 2020',
     company: 'Appota',
     role: 'Front-end Developer',
-    tech: ['React.js, React Native'],
+    tech: ['React.js', 'React Native'],
     languages: ['Javascript'],
   },
   {
@@ -37,7 +37,7 @@ export const experience: Experience = [
     date: 'Jul 2019 - Aug 2019',
     company: 'Teko Vietnam',
     role: 'Web Developer (internship)',
-    tech: ['Flask - Python', 'React.js'],
+    tech: ['Flask', 'React.js'],
     languages: ['Python', 'Javascript'],
   },
 ]
