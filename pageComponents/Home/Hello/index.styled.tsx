@@ -24,7 +24,7 @@ export const StyledHelloContainer = styled.section`
     .typical__my-name {
       font-size: 40px;
       font-weight: 600;
-      margin-top: 16px;
+      margin-top: 40px;
       /* color: ${(props: ThemeProps) => props.theme.colors.white}; */
 
       &.stop:after {
@@ -33,7 +33,6 @@ export const StyledHelloContainer = styled.section`
     }
     .typical__description {
       font-size: 26px;
-      margin-top: 8px;
       /* color: ${(props: ThemeProps) => props.theme.colors.white}; */
     }
   }
