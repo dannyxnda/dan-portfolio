@@ -23,3 +23,31 @@ h3,
 h4 {
   margin: 0 0 16px;
 }
+
+.__hello__ {
+  width: 100vw;
+  height: 100vh;
+  animation: hello 2.2s ease;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+@keyframes hello {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}

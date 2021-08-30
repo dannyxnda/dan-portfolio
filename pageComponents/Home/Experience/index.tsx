@@ -20,7 +20,7 @@ const Experience = () => {
   const imgSize = width < 1170 ? '40px' : '60px'
 
   return (
-    <StyledExperienceContainer>
+    <StyledExperienceContainer className="section__experience">
       <Container>
         <Zoom top>
           <Heading type="h1" className="heading">

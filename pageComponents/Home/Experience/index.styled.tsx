@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { pc, sp } from 'styles/breakpoints'
 import { ThemeProps } from 'styles/theme'
 
 export const StyledExperienceContainer = styled.section`

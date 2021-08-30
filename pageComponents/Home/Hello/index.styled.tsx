@@ -7,6 +7,16 @@ export const StyledHelloContainer = styled.section`
   background-size: cover;
   background-color: ${(props: ThemeProps) =>
     props.theme.colors.helloBackground};
+  animation: hellosection 2s ease;
+
+  @keyframes hellosection {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   .container {
     height: 100%;

@@ -5,7 +5,11 @@ import HomePage from 'pageComponents/Home'
 
 const Home: NextPage = () => {
   return (
-    <Layout isHeaderShown={false} isFooterShown={true}>
+    <Layout
+      isHeaderShown={false}
+      isFooterShown={false}
+      description="Nguyen Duc Anh | Danny"
+    >
       <HomePage />
     </Layout>
   )

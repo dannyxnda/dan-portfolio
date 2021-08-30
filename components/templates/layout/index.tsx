@@ -9,7 +9,7 @@ type Props = {
   isHeaderShown?: boolean
   isFooterShown?: boolean
   title?: string
-  description?: string
+  description: string
   icon?: string
   children: React.ReactNode
 }

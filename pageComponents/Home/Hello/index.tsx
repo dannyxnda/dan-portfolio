@@ -22,7 +22,7 @@ const Hello = () => {
   return (
     <StyledHelloContainer data-section="hello">
       <Container className="container">
-        <Fade top>
+        <Fade bottom>
           <div className="danny-logo-container">
             <DannyLogo />
           </div>
