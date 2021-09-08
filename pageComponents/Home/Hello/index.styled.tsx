@@ -2,13 +2,6 @@ import styled from 'styled-components'
 import { ThemeProps } from 'styles/theme'
 
 export const StyledHelloContainer = styled.section`
-  height: max(100vh, 500px);
-  background-image: url('/images/hellobg.jpeg');
-  background-size: cover;
-  background-color: ${(props: ThemeProps) =>
-    props.theme.colors.helloBackground};
-  animation: hellosection 2s ease;
-
   @keyframes hellosection {
     0% {
       opacity: 0;
@@ -18,7 +11,39 @@ export const StyledHelloContainer = styled.section`
     }
   }
 
+  position: relative;
+  height: max(100vh, 500px);
+  /* background-image: url('/images/hellobg.jpeg');
+  background-size: cover; */
+  background-color: ${(props: ThemeProps) =>
+    props.theme.colors.helloBackground};
+  animation: hellosection 2s ease;
+
+  @keyframes fakebg {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fake-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fakebg 4s linear;
+  }
+
   .container {
+    position: relative;
     height: 100%;
     text-align: center;
     display: flex;

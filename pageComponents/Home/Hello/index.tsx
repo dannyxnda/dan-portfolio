@@ -7,6 +7,7 @@ import Typical from 'react-typical'
 import { DannyLogo } from 'components/atoms/danny'
 import Fade from 'react-reveal/Fade'
 import clsx from 'clsx'
+import Image from 'next/image'
 
 const Hello = () => {
   const [isNameStop, setIsNameStop] = useState<boolean>(false)
@@ -21,6 +22,13 @@ const Hello = () => {
 
   return (
     <StyledHelloContainer data-section="hello">
+      <Image
+        className="fake-bg"
+        src="/images/hellobg.jpeg"
+        alt=""
+        layout="fill"
+        objectFit="cover"
+      />
       <Container className="container">
         <Fade bottom>
           <div className="danny-logo-container">

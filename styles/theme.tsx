@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
     defaultColor: '#000000',
-    helloBackground: '#7fa9dd',
+    helloBackground: '#ffd1e2',
     helloText: '',
     white: '#FFF',
     experienceBackground: '#a2a4dc',

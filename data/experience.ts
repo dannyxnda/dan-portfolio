@@ -10,7 +10,7 @@ type Experience = {
 export const experience: Experience = [
   {
     icon: '/images/company/hhg.png',
-    date: 'Jul 2020 - Present',
+    date: 'Jul 2021 - Present',
     company: 'Hello Health Group',
     role: 'Front-end Developer',
     tech: ['React.js', 'Next.js'],
