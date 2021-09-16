@@ -27,7 +27,8 @@ const Layout = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" href={icon} />
+        <link rel="icon" type="image/svg+xml" href={icon} />
+        <link rel="alternate icon" href="/images/DannyLogo.png" />
       </Head>
 
       {isHeaderShown && <Header />}
@@ -42,9 +43,10 @@ const Layout = ({
 Layout.defaultProps = {
   isHeaderShown: true,
   isFooterShown: true,
-  title: 'FunnyFunction.Fun',
-  description: 'FunnyFunction.Fun',
-  icon: '/images/DannyLogo.png',
+  title: 'Duc Anh Nguyen | Front-end Developer',
+  description:
+    'Front-end Developer | Javascript | Typescript | React.js | Next.js',
+  icon: '/images/danny_logo_noborder.svg',
 }
 
 export { Layout }

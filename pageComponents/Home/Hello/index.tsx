@@ -4,10 +4,10 @@ import { Container } from 'components/atoms/container'
 import { StyledHelloContainer } from './index.styled'
 import { hello } from 'data/hello'
 import Typical from 'react-typical'
-import { DannyLogo } from 'components/atoms/danny'
 import Fade from 'react-reveal/Fade'
 import clsx from 'clsx'
 import Image from 'next/image'
+import { DannyLogoSvg } from 'components/atoms/danny'
 
 const Hello = () => {
   const [isNameStop, setIsNameStop] = useState<boolean>(false)
@@ -32,7 +32,8 @@ const Hello = () => {
       <Container className="container">
         <Fade bottom>
           <div className="danny-logo-container">
-            <DannyLogo />
+            {/* <DannyLogo size={200} /> */}
+            <DannyLogoSvg size={200} />
           </div>
         </Fade>
 
