@@ -38,7 +38,7 @@ const Layout = ({
         <meta property="og:site_name" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={altIcon} />
+        <meta property="og:image" content={`${NEXT_PUBLIC_DOMAIN}${altIcon}`} />
         <meta property="og:locale" content="vi" />
       </Head>
 
