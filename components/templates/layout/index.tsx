@@ -54,7 +54,7 @@ const Layout = ({
 Layout.defaultProps = {
   isHeaderShown: true,
   isFooterShown: true,
-  title: 'Duc Anh Nguyen | Front-end Developer',
+  title: 'Duc Anh Nguyen | dannyxnda',
   description:
     'Front-end Developer | Javascript | Typescript | React.js | Next.js',
   icon: '/images/danny_logo_noborder.svg',
