@@ -32,7 +32,6 @@ const Hello = () => {
       <Container className="container">
         <Fade bottom>
           <div className="danny-logo-container">
-            {/* <DannyLogo size={200} /> */}
             <DannyLogoSvg size={200} />
           </div>
         </Fade>

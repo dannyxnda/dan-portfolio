@@ -30,7 +30,7 @@ const Layout = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" type="image/svg+xml" href={icon} />
+        <link rel="icon" href={icon} />
         <link rel="alternate icon" href={altIcon} />
 
         <meta property="og:url" content={NEXT_PUBLIC_DOMAIN} />
@@ -57,7 +57,7 @@ Layout.defaultProps = {
   title: 'Duc Anh Nguyen | dannyxnda',
   description:
     'Front-end Developer | Javascript | Typescript | React.js | Next.js',
-  icon: '/images/danny_logo_noborder.svg',
+  icon: '/images/danny_logo_noborder.png',
   altIcon: '/images/danny_logo_noborder.png',
 }
 
