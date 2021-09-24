@@ -20,7 +20,7 @@ const Layout = ({
   isFooterShown,
   title,
   description,
-  icon,
+  // icon,
   altIcon,
   children,
 }: Props) => {
@@ -30,7 +30,26 @@ const Layout = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" href={icon} />
+        {/* <link rel="icon" href={icon} /> */}
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
         <link rel="alternate icon" href={altIcon} />
 
         <meta property="og:url" content={NEXT_PUBLIC_DOMAIN} />
@@ -55,9 +74,8 @@ Layout.defaultProps = {
   isHeaderShown: true,
   isFooterShown: true,
   title: 'Duc Anh Nguyen | dannyxnda',
-  description:
-    'Front-end Developer | Javascript | Typescript | React.js | Next.js',
-  icon: '/images/danny_logo_noborder.png',
+  description: 'Duc Anh Nguyen | Danny | dannyxnda',
+  // icon: '/images/danny_logo_noborder.png',
   altIcon: '/images/danny_logo_noborder.png',
 }
 
