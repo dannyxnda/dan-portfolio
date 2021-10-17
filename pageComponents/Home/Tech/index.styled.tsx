@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { sp } from 'styles/breakpoints'
+import { mobile } from 'styles/breakpoints'
 import { ThemeProps } from 'styles/theme'
 
 export const StyledTechContainer = styled.section`
@@ -16,13 +16,13 @@ export const StyledTechContainer = styled.section`
     > div {
       min-width: 104px;
       text-align: center;
-      ${sp} {
+      ${mobile} {
         min-width: 80px;
       }
 
       > div {
         border-radius: 16px;
-        ${sp} {
+        ${mobile} {
           border-radius: 8px;
         }
       }

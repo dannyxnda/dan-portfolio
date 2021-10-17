@@ -8,6 +8,8 @@ export const breakpoints = {
   desktop: 2560,
 }
 
-export const pc = `@media screen and (min-width: ${breakpoints.tablet}px)`
+export const desktop = `@media screen and (min-width: ${breakpoints.tablet}px)`
 
-export const sp = `@media screen and (max-width: ${breakpoints.tablet - 1}px)`
+export const mobile = `@media screen and (max-width: ${
+  breakpoints.tablet - 1
+}px)`

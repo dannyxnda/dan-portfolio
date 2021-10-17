@@ -39,7 +39,7 @@ export const StyledHelloContainer = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    animation: fakebg 4s linear;
+    animation: fakebg 3s linear;
   }
 
   .container {

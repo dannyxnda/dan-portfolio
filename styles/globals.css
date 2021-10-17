@@ -27,12 +27,12 @@ h4 {
 .__hello__ {
   width: 100vw;
   height: 100vh;
-  animation: hello 2.2s ease;
+  animation: hello 1.5s ease;
   z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
-  background: white;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { sp } from 'styles/breakpoints'
+import { mobile } from 'styles/breakpoints'
 import { ThemeProps } from 'styles/theme'
 
 export const StyledAboutContainer = styled.section`
@@ -22,7 +22,7 @@ export const StyledAboutContainer = styled.section`
 
   .info {
     padding: 0px 32px;
-    ${sp} {
+    ${mobile} {
       padding: 0;
     }
     p {
