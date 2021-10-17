@@ -74,7 +74,7 @@ Layout.defaultProps = {
   isHeaderShown: true,
   isFooterShown: true,
   title: 'Duc Anh Nguyen | dannyxnda',
-  description: 'Duc Anh Nguyen | Danny | dannyxnda',
+  description: 'Duc Anh Nguyen | Front-end Developer',
   // icon: '/images/danny_logo_noborder.png',
   altIcon: '/images/danny_logo_noborder.png',
 }
