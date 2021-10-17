@@ -40,8 +40,8 @@ const About = () => {
                   <span>My full name is </span>
                   <span>Nguyễn Đức Anh</span>
                   <span>
-                    &nbsp;(with tone marks). I have an English name - Danny, it
-                    means&nbsp;DAN &amp; Youth.
+                    &nbsp;(DAN - Duc Anh Nguyen). My friends also call me Danny,
+                    it means&nbsp;DAN &amp; Youth.
                   </span>
                   {/* <span className="styled-first-letter">Duc&nbsp;</span>
                   <span className="styled-first-letter">Anh&nbsp;</span>
@@ -52,13 +52,14 @@ const About = () => {
                 <p>
                   I love music, one of the songs I love the most is{' '}
                   <a
-                    href="https://youtu.be/UpHHPkLkoG8"
+                    href="https://youtu.be/fgpwTxIv76Q"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Count on me
+                    Nhắm mắt thấy mùa hè
                   </a>
-                  . That&apos;s really cute!
+                  . That reminds me of summer memories in the North of
+                  Vietnam...
                 </p>
                 <p>
                   I&apos;d studied at the{' '}
@@ -66,7 +67,7 @@ const About = () => {
                     University of Engineering and Technology - Vietnam National
                     University
                   </a>{' '}
-                  from 2016 and graduated in Computer Science in 2020
+                  from 2016 and graduated in Computer Science in 2020.
                 </p>
                 <p>
                   Currently I&apos;m living in HCMC and working as a Front-end

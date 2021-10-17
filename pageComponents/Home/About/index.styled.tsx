@@ -5,6 +5,7 @@ import { ThemeProps } from 'styles/theme'
 export const StyledAboutContainer = styled.section`
   background: ${(props: ThemeProps) => props.theme.colors.aboutBackground};
   padding: 32px 0;
+  border-bottom: 4px double #7085c1;
 
   .content {
     display: flex;

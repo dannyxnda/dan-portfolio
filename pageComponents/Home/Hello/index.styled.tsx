@@ -40,6 +40,11 @@ export const StyledHelloContainer = styled.section`
     width: 100%;
     height: 100%;
     animation: fakebg 3s linear;
+    display: none;
+
+    &.img-loaded {
+      display: initial;
+    }
   }
 
   .container {

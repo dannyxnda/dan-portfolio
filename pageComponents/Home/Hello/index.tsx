@@ -11,6 +11,7 @@ import { DannyLogoSvg } from 'components/atoms/danny'
 
 const Hello = () => {
   const [isNameStop, setIsNameStop] = useState<boolean>(false)
+  const [isImgLoaded, setIsImgLoaded] = useState<boolean>(false)
 
   React.useEffect(() => {
     const timeout = setTimeout(() => {
@@ -23,11 +24,14 @@ const Hello = () => {
   return (
     <StyledHelloContainer data-section="hello">
       <Image
-        className="fake-bg"
-        src="/images/hellobg.jpeg"
+        className={clsx('fake-bg', {
+          'img-loaded': isImgLoaded,
+        })}
+        src="/images/hellobg.jpg"
         alt=""
         layout="fill"
         objectFit="cover"
+        onLoad={() => setIsImgLoaded(true)}
       />
       <Container className="container">
         <Fade bottom>
