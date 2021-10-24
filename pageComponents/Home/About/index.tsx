@@ -28,27 +28,10 @@ const About = () => {
 
           <Fade bottom cascade>
             <div className="info">
-              <Heading type="h3">{about.text.heading}</Heading>
-              {/* <div
-              dangerouslySetInnerHTML={{
-                __html: about.text.text,
-              }}
-            /> */}
+              <h1>{about.text.heading}</h1>
 
               <div>
-                <p>
-                  <span>My full name is </span>
-                  <span>Nguyễn Đức Anh</span>
-                  <span>
-                    &nbsp;(DAN - Duc Anh Nguyen). My friends also call me Danny,
-                    it means&nbsp;DAN &amp; Youth.
-                  </span>
-                  {/* <span className="styled-first-letter">Duc&nbsp;</span>
-                  <span className="styled-first-letter">Anh&nbsp;</span>
-                  <span className="styled-first-letter">Nguyen&nbsp;</span>
-                  <span className="styled-first-letter">N&nbsp;</span>
-                  <span className="styled-first-letter">Youth&nbsp;.</span> */}
-                </p>
+                <p>My full name is Nguyễn Đức Anh (Duc Anh Nguyen - DAN).</p>
                 <p>
                   I love music, one of the songs I love the most is{' '}
                   <a
