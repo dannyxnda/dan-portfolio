@@ -14,14 +14,14 @@ const StyledHomeContainer = styled.div`
 `
 
 const Home = () => {
-  // const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useState<boolean>(true)
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false)
-  //   }, 1500)
-  //   return () => clearTimeout(timer)
-  // }, [])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [])
 
   // return (
   //   <StyledHomeContainer>
@@ -39,6 +39,9 @@ const Home = () => {
   //     )}
   //   </StyledHomeContainer>
   // )
+  if (loading) {
+    return null
+  }
 
   return (
     <StyledHomeContainer>
