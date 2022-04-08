@@ -14,7 +14,9 @@ const StyledHomeContainer = styled.div`
 `
 
 const Home = () => {
-  const [loading, setLoading] = useState<boolean>(true)
+  const [loading, setLoading] = useState<boolean>(
+    typeof window !== 'undefined' ? true : false
+  )
 
   useEffect(() => {
     const timer = setTimeout(() => {
