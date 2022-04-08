@@ -8,7 +8,7 @@ export const StyledExperienceContainer = styled.section`
   overflow: hidden;
 
   .heading {
-    text-align: center;
+    /* text-align: center; */
   }
 
   .company-icon {

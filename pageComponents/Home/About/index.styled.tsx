@@ -9,6 +9,20 @@ export const StyledAboutContainer = styled.section`
 
   .content {
     display: flex;
+    ${mobile} {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    > div:first-child {
+      min-width: 300px;
+      width: 300px;
+
+      ${mobile} {
+        min-height: 300px;
+        max-width: calc(100% - 32px);
+      }
+    }
   }
 
   .img-wrapper {
@@ -24,7 +38,7 @@ export const StyledAboutContainer = styled.section`
   .info {
     padding: 0px 32px;
     ${mobile} {
-      padding: 0;
+      padding: 32px 0px 0px;
     }
     p {
       line-height: 1.35;

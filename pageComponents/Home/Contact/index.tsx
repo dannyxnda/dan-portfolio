@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="link-container">
             {contacts.links.map((l, i) => (
               <div className="icon-container" key={i}>
-                <a href={l.href}>
+                <a href={l.href} target="_blank" rel="noreferrer">
                   <Image src={l.icon} alt="" width="32px" height="32px" />
                 </a>
               </div>

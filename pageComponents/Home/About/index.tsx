@@ -3,6 +3,7 @@ import { Container } from 'components/atoms/container'
 import { StyledAboutContainer } from './index.styled'
 import { Heading } from 'components/atoms/text'
 import Fade from 'react-reveal/Fade'
+import Image from 'next/image'
 
 import { about } from 'data/about'
 
@@ -16,15 +17,17 @@ const About = () => {
           </Heading>
         </Fade>
         <div className="content">
-          {/* <Fade left>
-            <Image
-              className="img-wrapper"
-              src={about.img}
-              alt="My picture"
-              width="100%"
-              height="100%"
-            />
-          </Fade> */}
+          <Fade left>
+            <div style={{ position: 'relative' }}>
+              <Image
+                className="img-wrapper"
+                src={about.img}
+                alt="My picture"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </Fade>
 
           <Fade bottom cascade>
             <div className="info">
@@ -44,6 +47,7 @@ const About = () => {
                   . That reminds me of summer memories in the North of
                   Vietnam...
                 </p>
+                <p>I want to go to everywhere...</p>
                 <p>
                   I&apos;d studied at the{' '}
                   <a href="https://uet.vnu.edu.vn/">
