@@ -34,7 +34,7 @@ const About = () => {
               <h1>{about.text.heading}</h1>
 
               <div>
-                <p>My full name is Nguyễn Đức Anh (Duc Anh Nguyen - DAN).</p>
+                <p>My full name is Nguyễn Đức Anh.</p>
                 <p>
                   I love music, one of the songs I love the most is{' '}
                   <a
