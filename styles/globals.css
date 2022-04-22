@@ -66,8 +66,8 @@ h4 {
   height: 0;
   margin: 8px;
   box-sizing: border-box;
-  border: 32px solid #fc6401;
-  border-color: #fc6401 transparent #fc6401 transparent;
+  border: 32px solid;
+  border-color: #d4abab transparent #d4abab transparent;
   animation: lds-hourglass 1.2s infinite;
 }
 @keyframes lds-hourglass {
