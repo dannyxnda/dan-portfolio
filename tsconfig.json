@@ -17,7 +17,7 @@
     "paths": {
       "@/public/*": ["public/*"]
     },
-    "typeRoots": ["node_modules/@types", "@types"]
+    "typeRoots": ["node_modules/@types"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "data"],
   "exclude": ["node_modules"]

@@ -1,8 +1,7 @@
-// import Image from 'next/image'
 import { Container } from 'components/atoms/container'
 import { StyledAboutContainer } from './index.styled'
 import { Heading } from 'components/atoms/text'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import Image from 'next/image'
 
 import { about } from 'data/about'
@@ -11,13 +10,13 @@ const About = () => {
   return (
     <StyledAboutContainer>
       <Container>
-        <Fade left>
+        <Fade direction="left">
           <Heading type="h1" className="heading">
             About me
           </Heading>
         </Fade>
         <div className="content">
-          <Fade left>
+          <Fade direction="left">
             <div style={{ position: 'relative' }}>
               <Image
                 className="img-wrapper"
@@ -29,7 +28,7 @@ const About = () => {
             </div>
           </Fade>
 
-          <Fade bottom cascade>
+          <Fade direction="down" cascade>
             <div className="info">
               <h1>{about.text.heading}</h1>
 
