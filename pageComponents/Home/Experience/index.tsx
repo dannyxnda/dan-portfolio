@@ -13,8 +13,7 @@ import { Heading, Text } from 'components/atoms/text'
 
 import { useScreenSize } from 'src/utils/useScreenSize'
 
-import Zoom from 'react-reveal/Zoom'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 
 const Experience = () => {
   const { width } = useScreenSize()
@@ -23,7 +22,7 @@ const Experience = () => {
   return (
     <StyledExperienceContainer className="section__experience">
       <Container>
-        <Fade left>
+        <Fade direction="left">
           <Heading type="h1" className="heading">
             Experience
           </Heading>

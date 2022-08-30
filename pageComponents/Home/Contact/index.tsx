@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { Container } from 'components/atoms/container'
 import { StyledContactContainer } from './index.styled'
 import { Heading } from 'components/atoms/text'
-import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
+import { Fade, Zoom } from 'react-awesome-reveal'
 
 import { contacts } from 'data/contact'
 
@@ -12,7 +11,7 @@ const Contact = () => {
   return (
     <StyledContactContainer>
       <Container>
-        <Fade left>
+        <Fade direction="left">
           <Heading type="h1" className="heading">
             Contact
           </Heading>

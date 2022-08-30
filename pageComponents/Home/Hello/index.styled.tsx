@@ -13,8 +13,6 @@ export const StyledHelloContainer = styled.section`
 
   position: relative;
   height: max(100vh, 500px);
-  /* background-image: url('/images/hellobg.jpeg');
-  background-size: cover; */
   background-color: ${(props: ThemeProps) =>
     props.theme.colors.helloBackground};
   animation: hellosection 2s ease;
@@ -39,11 +37,11 @@ export const StyledHelloContainer = styled.section`
     left: 0;
     width: 100%;
     height: 100%;
-    animation: fakebg 3s linear;
-    display: none;
+    opacity: 0;
+    transition: opacity 100ms ease-out;
 
     &.img-loaded {
-      display: initial;
+      opacity: 1;
     }
   }
 
