@@ -7,10 +7,6 @@ export const StyledExperienceContainer = styled.section`
   padding: 32px 0;
   overflow: hidden;
 
-  .heading {
-    /* text-align: center; */
-  }
-
   .company-icon {
     border-radius: 50%;
     overflow: hidden;
