@@ -17,11 +17,11 @@ const About = () => {
         </Fade>
         <div className="content">
           <Fade direction="left">
-            <div style={{ position: 'relative' }}>
+            <div>
               <Image
                 className="img-wrapper"
                 src={about.img}
-                alt="My picture"
+                alt="Duc-Anh Nguyen"
                 layout="fill"
                 objectFit="cover"
               />
