@@ -38,7 +38,7 @@ export const StyledHelloContainer = styled.section`
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 100ms ease-out;
+    transition: opacity 1000ms;
 
     &.img-loaded {
       opacity: 1;
