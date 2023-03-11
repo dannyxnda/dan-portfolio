@@ -28,7 +28,9 @@ const Hello = () => {
         alt=""
         layout="fill"
         objectFit="cover"
-        onLoad={(e) => e.currentTarget.classList.add('img-loaded')}
+        onLoad={(e) => {
+          e.currentTarget.classList.add('img-loaded')
+        }}
       />
       <Container className="container">
         <Fade direction="down">

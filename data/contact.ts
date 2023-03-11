@@ -17,5 +17,10 @@ export const contacts: Contact = {
       icon: '/images/instagram.png',
       text: 'dannyxnda',
     },
+    {
+      href: 'https://www.youtube.com/channel/UCFrHYX_7Y_Ng6meaXNTYm7A',
+      icon: '/images/youtube.png',
+      text: "Danny's on the way",
+    },
   ],
 }
