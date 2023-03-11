@@ -9,8 +9,16 @@ type Experience = {
 
 export const experience: Experience = [
   {
+    icon: '/images/company/nab.png',
+    date: 'Nov 2022 - Present',
+    company: 'National Australia Bank',
+    role: 'Front-end Engineer',
+    tech: ['React.js'],
+    languages: ['Javascript', 'Typescript'],
+  },
+  {
     icon: '/images/company/hhg.png',
-    date: 'Jul 2021 - Present',
+    date: 'Jul 2021 - Oct 2022',
     company: 'Hello Health Group',
     role: 'Front-end Developer',
     tech: ['React.js', 'Next.js'],
