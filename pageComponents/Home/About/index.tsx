@@ -37,16 +37,16 @@ const About = () => {
                 <p>
                   I love music, one of the songs I love the most is{' '}
                   <a
-                    href="https://youtu.be/fgpwTxIv76Q"
+                    href="https://youtu.be/L17njonbcT0"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Nhắm mắt thấy mùa hè
+                    Lanterns
                   </a>
-                  . That reminds me of summer memories in the North of
-                  Vietnam...
+                  . Listening to that song is so exciting while I'm on my
+                  motorbike.
                 </p>
-                <p>I want to go to everywhere...</p>
+                <p>I want to travel around the work...</p>
                 <p>
                   I&apos;d studied at the{' '}
                   <a href="https://uet.vnu.edu.vn/">
@@ -56,7 +56,7 @@ const About = () => {
                   from 2016 and graduated in Computer Science in 2020.
                 </p>
                 <p>
-                  Currently I&apos;m living in HCMC and working as a Front-end
+                  Currently I&apos;m living in Hanoi and working as a Front-end
                   Developer.
                 </p>
               </div>
