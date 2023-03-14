@@ -43,10 +43,10 @@ const About = () => {
                   >
                     Lanterns
                   </a>
-                  . Listening to that song is so exciting while I'm on my
+                  . Listening to that song is so exciting especially while I'm on my
                   motorbike.
                 </p>
-                <p>I want to travel around the work...</p>
+                <p>I want to travel around the world and discover any places.</p>
                 <p>
                   I&apos;d studied at the{' '}
                   <a href="https://uet.vnu.edu.vn/">
