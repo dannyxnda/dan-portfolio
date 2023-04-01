@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <StyledExperienceContainer className="section__experience">
       <Container>
-        <Fade direction="left">
+        <Fade direction="left" triggerOnce>
           <Heading type="h1" className="heading">
             Experience
           </Heading>
