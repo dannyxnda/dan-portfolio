@@ -14,13 +14,13 @@ const Tech = () => {
   return (
     <StyledTechContainer>
       <Container>
-        <Fade direction="left">
+        <Fade direction="left" triggerOnce>
           <Heading type="h1" className="heading">
             Technology
           </Heading>
         </Fade>
 
-        <Fade direction="right" cascade>
+        <Fade direction="right" cascade triggerOnce>
           <div className="content">
             <div className="techlist languages">
               {tech.languages.map((l, i) => (

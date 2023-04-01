@@ -10,13 +10,13 @@ const About = () => {
   return (
     <StyledAboutContainer>
       <Container>
-        <Fade direction="left">
+        <Fade direction="left" triggerOnce>
           <Heading type="h1" className="heading">
             About me
           </Heading>
         </Fade>
         <div className="content">
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce>
             <div>
               <Image
                 className="img-wrapper"
@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </Fade>
 
-          <Fade direction="down" cascade>
+          <Fade direction="down" cascade triggerOnce>
             <div className="info">
               <h1>{about.text.heading}</h1>
 
@@ -43,10 +43,12 @@ const About = () => {
                   >
                     Lanterns
                   </a>
-                  . Listening to that song is so exciting especially while I'm on my
-                  motorbike.
+                  . Listening to that song is so exciting especially while I'm
+                  on my motorbike.
                 </p>
-                <p>I want to travel around the world and discover any places.</p>
+                <p>
+                  I want to travel around the world and discover any places.
+                </p>
                 <p>
                   I&apos;d studied at the{' '}
                   <a href="https://uet.vnu.edu.vn/">

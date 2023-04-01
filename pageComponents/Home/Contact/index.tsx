@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <StyledContactContainer>
       <Container>
-        <Fade direction="left">
+        <Fade direction="left" triggerOnce>
           <Heading type="h1" className="heading">
             Contact
           </Heading>
