@@ -3,7 +3,7 @@ import { CSSProperties } from 'styled-components'
 import { StyledHeading, StyledText } from './index.styled'
 
 type HeadingProps = {
-  type?: 'h1' | 'h2' | 'h3' | 'h4'
+  type: 'h1' | 'h2' | 'h3' | 'h4'
   color?: string
   style?: CSSProperties
   [x: string]: string | JSX.Element | JSX.Element[] | React.ReactNode
@@ -39,15 +39,17 @@ type TextProps = {
     | 'caption-2'
   color?: string
   style?: CSSProperties
+  className?: string
   [x: string]: string | JSX.Element | JSX.Element[] | React.ReactNode
 }
 
-const Text = ({ type, color, style, ...props }: TextProps) => {
+const Text = ({ type, color, style, className, ...props }: TextProps) => {
   return (
     <StyledText
       data-type={type}
       style={{ ...(color && { '--text-color': color }), ...style }}
       {...props}
+      className={className}
     />
   )
 }
