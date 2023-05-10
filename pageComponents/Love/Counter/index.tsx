@@ -32,7 +32,7 @@ const Counter = () => {
 
   return (
     <StyledCounterContainer>
-      <Fade duration={2000} delay={2000}>
+      <Fade duration={2000} delay={1000}>
         <Container className="container">
           <Heading type="h3" color="white">
             {format(time, 'PPpp')} is the day we promised.
