@@ -1,14 +1,28 @@
 import { DannyLogoWithPaddingSvg } from 'components/atoms/danny'
+import { useState } from 'react'
 
 const DannyLogo = () => {
+  const [size, setSize] = useState<number>(100)
+
   return (
     <div
       style={{
-        background: 'pink',
         position: 'relative',
         display: 'inline-block',
+        width: size,
+        height: size,
       }}
     >
+      <input
+        type="number"
+        value={size}
+        onChange={(e) => setSize(Number(e.target.value))}
+        style={{
+          position: 'fixed',
+          bottom: 10,
+          right: 10,
+        }}
+      />
       <div
         style={{
           display: 'inline-block',
@@ -22,7 +36,7 @@ const DannyLogo = () => {
           borderRadius: '50%',
         }}
       />
-      <DannyLogoWithPaddingSvg size={10} />
+      <DannyLogoWithPaddingSvg size={size} />
     </div>
   )
 }
