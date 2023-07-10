@@ -1,4 +1,3 @@
-// @ts-ignore all
 import Document, {
   Html,
   Head,
