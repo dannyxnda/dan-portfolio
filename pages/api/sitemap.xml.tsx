@@ -1,7 +1,7 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
 
-type Req = { headers: { host: any } }
+type Req = { headers: { host: unknown } }
 type Res = {
   writeHead: (status: number, config: { 'Content-Type': string }) => void
   end: (xmlString: string) => void

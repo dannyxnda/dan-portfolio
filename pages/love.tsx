@@ -1,9 +1,9 @@
 import { Layout } from 'components/templates/layout'
-import { CONFESSION_TIME, DATE_PHOTO } from 'data/constant/love'
+import { DATE_PHOTO } from 'data/constant/love'
 import Image from 'next/image'
 import { Counter } from 'pageComponents/Love/Counter'
 import { StyledLoveContainer } from 'pageComponents/Love/index.styled'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Fade } from 'react-awesome-reveal'
 
 const Love = () => {

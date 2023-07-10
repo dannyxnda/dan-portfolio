@@ -60,8 +60,6 @@ const DannyLogoWithPaddingSvg = (props: { size: number }) => {
     .map((point) => point.join())
     .join(' ')
 
-  const sum = min + max
-
   const midSmall = size * 0.53
 
   const smallOnePoints = [
