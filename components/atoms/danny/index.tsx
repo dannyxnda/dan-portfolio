@@ -6,6 +6,8 @@ type Props = {
   style?: CSSProperties
 }
 
+export type LogoMode = 'design' | 'prod'
+
 const DannyLogo = ({ size, style }: Props) => {
   return (
     <StyledDannyLogo
@@ -44,34 +46,34 @@ const DannyLogoSvg = (props: { size: number }) => {
   )
 }
 
-const DannyLogoWithPaddingSvg = (props: { size: number }) => {
-  const { size } = props
+const DannyLogoWithPaddingSvg = (props: {
+  width: number
+  padding?: number
+  mode?: LogoMode
+  backgroundFill?: string
+}) => {
+  const { width: w, padding: p = 0, mode = 'prod', backgroundFill } = props
 
-  const min = size * 0.2
-  const max = size * 0.8
-  const center = size / 2
-  const maxContentLength = size * 0.6
-
-  const bigOnePoints = [
-    [min, min],
-    [min, max],
-    [center, center],
-  ]
+  const bigOnePoints = [[p, p], [p, w - p], Array(2).fill(w / 2)]
     .map((point) => point.join())
     .join(' ')
 
-  const midSmall = size * 0.53
-
   const smallOnePoints = [
-    [min + maxContentLength * 0.1, max],
-    [midSmall, midSmall],
-    [max, max],
+    [w / 10 + p * 0.8, w - p],
+    Array(2).fill(0.55 * w - p / 10),
+    Array(2).fill(w - p),
   ]
     .map((point) => point.join())
     .join(' ')
 
   return (
-    <svg height={size} width={size} fill="pink">
+    <svg height={w} width={w}>
+      {!!backgroundFill && (
+        <rect width="100%" height="100%" fill={backgroundFill} />
+      )}
+      {mode === 'design' && (
+        <circle r={w / 2} cx={w / 2} cy={w / 2} fill="pink" />
+      )}
       <polygon points={bigOnePoints} style={{ fill: 'black' }} />
       <polygon points={smallOnePoints} style={{ fill: 'black' }} />
     </svg>
