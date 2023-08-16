@@ -8,7 +8,6 @@ import { Fade } from 'react-awesome-reveal'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { DannyLogoSvg } from 'components/atoms/danny'
-import Link from 'next/link'
 
 const Hello = () => {
   const [isNameStop, setIsNameStop] = useState<boolean>(false)
@@ -36,11 +35,7 @@ const Hello = () => {
       <Container className="container">
         <Fade direction="down">
           <div className="danny-logo-container">
-            <Link href="/love" passHref>
-              <a>
-                <DannyLogoSvg size={200} />
-              </a>
-            </Link>
+            <DannyLogoSvg size={200} />
           </div>
         </Fade>
 
